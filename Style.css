@@ -1,0 +1,294 @@
+body
+{
+    background-color: rgb(91, 169, 230);
+    text-align: center;
+    font-family: "Monaco", monospace;
+    margin: 0;
+}
+
+
+/*Home page styling*/
+
+
+#HomeRectangle
+{
+    width:100%;
+    height:130px;
+    top: 0px;
+    left: 0%;
+    background-color: rgb(21, 23, 22);
+}
+#SiteIntro
+{
+    text-align: center;
+    padding-top: 100px;
+}
+#IntroParagraph
+{
+    font-size: large;
+}
+.FooterContent
+{
+    background-color: rgb(21, 23, 22);
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    left: 0%;
+}
+#Buttons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#SignupButton
+{
+    float: left;
+    width: 200px;
+    margin-right: 15px;
+}
+#LoginButton
+{
+    float: left;
+    width: 200px;
+}
+
+
+
+
+/*Styling for the signup and login windows*/
+
+* {box-sizing: border-box}
+
+/*Full-width input fields*/
+  input[type=text], input[type=password]
+  {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/*Add a background color when the inputs get focus*/
+input[type=text]:focus, input[type=password]:focus
+{
+  background-color: #ddd;
+  outline: none;
+}
+
+/*Set a style for all buttons*/
+button
+{
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover
+{
+  opacity:1;
+}
+
+/*Extra styling for the cancel button*/
+.signupCancelButton
+{
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/*Float cancel and signup buttons and add equal width*/
+.signupCancelButton, .signup
+{
+  float: left;
+  width: 50%;
+}
+
+/*Add padding to container elements*/
+.container
+{
+  padding: 16px;
+}
+
+/*The window's background*/
+.modal
+{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/*Window content - Box*/
+.modal-content
+{
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/*Horizontal ruler (<hr>) styling*/
+hr
+{
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/*Clear floats*/
+.clearfix::after
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*Change styles for cancel button and signup button on extra small screens*/
+@media screen and (max-width: 300px)
+{
+  .signupCancelButton, .signup {
+    width: 100%;
+  }
+}
+
+
+
+/*Window background*/
+.modalLogin
+{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/*Float cancel and signup buttons and add equal width*/
+.loginCancelButton, .login
+{
+  float: left;
+  width: 50%;
+}
+
+/*Extra styling for the cancel button*/
+.loginCancelButton
+{
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+
+
+/*Window close buttons*/
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  /* Close button on hover */
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+/*Charts webpage styling*/
+
+#usernameDisplay
+{
+    text-align: right;
+    margin-right: 10px;
+}
+#logoutButton
+{
+    width: 150px;
+    background-color: rgb(21, 23, 22);
+    float: right;
+    margin-right: 10px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ChartsPageIntro
+{
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+.ChartsPageMessage
+{
+    font-size: large;
+}
+/*Float forms and place them next to each other*/
+#datesForm, #hospitalsForm, #chartsForm
+{
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  height: 100%;
+}
+#datesForm
+{
+    margin-bottom: 20px;
+}
+#hospitalsForm
+{
+    margin-top: 20px;
+}
+#chartsForm
+{
+    margin-top: 20px;
+}
+#chartsPageSubmitButton
+{
+    float: left;
+    width: 200px;
+    margin-top: 20px;
+}
+#comboboxesDiv
+{
+    float: left;
+    margin-top: 100px;
+}
+
+
+
+
+/*Google Charts chart styling*/
+
+#chart
+{
+    float: left;
+    margin-left: 250px;
+}
