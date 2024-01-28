@@ -1,0 +1,7 @@
+# Assignment-Website-with-AJAX-and-API
+
+This is a site that draws data from a database containing the average waiting times of patients that visited Northern Ireland’s hospitals’ Emergency Care Department from April 2008 to June 2018 (downloaded from [here](https://www.opendatani.gov.uk/dataset/emergency-care-waiting-times/resource/525ccf53-d048-452f-8f32-491f575d4134), which no longer works for some reason) and displays it by utilizing the [Google Charts API](https://developers.google.com/chart). (The .csv file containing the waiting times was downloaded manually and incorporated in the database I created for the site. I, then, exported the code needed for its population, so that the steps to run the website are fewer.)
+
+The assignment's goal was to create a database-driven application by using modern techniques and technologies (such as the API or the XMLHTTPRequest object I used to send a JSON object).
+
+The source code was using [Micorosoft Visual Studio Code](https://code.visualstudio.com/) and the site can only be run locally, using [XAMPP](https://www.apachefriends.org/download.html). To run it, you first have to create a database and then populate it, using the provided .sql file (if you don't name the database "EmergencyCareDB", you'll have to edit "dbConnect.php" and insert your database's name next to the "dbname =" field). After that, copy all source files to XAMPP's htdocs folder, open an Internet browser and type "localhost" in the address bar.
